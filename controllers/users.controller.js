@@ -2,7 +2,7 @@ const users = require("../models/users.model");
 
 
 exports.getUsers = (req, res) => {
-	res.render("index");
+	res.render("index", { title: "Users | home" });
 };
 
 exports.saveUsers = (req, res) => {
